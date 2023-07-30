@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.perfilphoto{
+    position: relative;
+    height: 180px;
+    width: 180px;
+}
+
+.perfilphoto:hover{
+    height: 200px;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.perfilphoto .img-class{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: black;
+    padding: 4px;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.card{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;  
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px 20px 0 0; 
+}
+
+.perfil{
+    margin-top: 30px;
+    font-size: 30px;
+     
+}
+
+.description{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.perfil, .description{
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.socialicons .link{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.buttons{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    width: 220px;
+    cursor: pointer;
+}
+
+.sub{
+    margin-bottom: 12px;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.previews{
+    font-size: 20px;
+    margin: 0 14px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.811);
+    transition: 0.5s;
+}
+
